@@ -1,21 +1,20 @@
-jquery-multilang
-================
-
-Simple and fast multilanguage plugin for jquery.
+jquery-multilang (improved)
+===========================
+Simple and fast multilanguage plugin for jquery
 
 
 Usage
 =====
-
 * Put the attribute tkey in each element you want to translate:
 
 ```html
-<p tkey="string-key-example"></p>
+<p tkey="example1"></p>
+<p tkey="example3"></p>
 ```
 
 
 * Modify the lang json files, having one translated string for each tkey in 
-each language file:
+your language file:
 
 ```json
 "string-key-example" : "Example string in English"
@@ -28,7 +27,13 @@ each language file:
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="lang.js"></script>
 ```
+* Result for 'italian' language browser:
 
+```html
+<p tkey="example1">Esempio n1</p>
+<p tkey="example3">Example n3</p>
+```
+*IMPORTANT:* example1 in Italian, but example3 in English, because lang/it.json has no translation for example3 - and this is an improvement compared to original jquery-multilang
 
 License
 =======
