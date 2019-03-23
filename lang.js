@@ -7,7 +7,7 @@ var translate = function(jsdata) {
     });
 }
 
-// even if custom lang is incompletely translates, english phrases will take place of non-translated parts
+// even if custom lang has incomplete translation, english phrases will take place of non-translated parts
 var merge_en_lang_with_any_lang = function(jsdata_any) {
     $.getJSON('lang/en.json', function(jsdata_en) {
         var jsdata = $.extend(jsdata_en, jsdata_any);
