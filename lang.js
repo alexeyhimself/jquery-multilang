@@ -1,4 +1,4 @@
-var supported_langs = ['en', 'ru']; 
+var supported_langs = ['en', 'it']; 
 
 var translate = function(jsdata) {
     $("[tkey]").each(function(index) {
